@@ -1,0 +1,11 @@
+.main_div {
+    border: 3px solid lightseagreen;
+    margin: 1rem;
+    padding: 1rem;
+    width: 15rem;
+}
+
+#tTraveler {
+    text-align: center;
+    color: rgb(202, 129, 202);
+}
