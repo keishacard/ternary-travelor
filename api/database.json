@@ -1,20 +1,69 @@
 {
-    "places": [
-        {
-            "id": 1,
-            "name": "Italy",
-            "visa_required": false
-        },
-        {
-            "id": 2,
-            "name": "Switzerland",
-            "visa_required": true
-        },
-        {
-            "id": 3,
-            "name": "France",
-            "visa_required": false
-        }
-    ],
-    "interests": []
+  "places": [
+    {
+      "id": 1,
+      "name": "Italy",
+      "visa_required": false
+    },
+    {
+      "id": 2,
+      "name": "Switzerland",
+      "visa_required": true
+    },
+    {
+      "id": 3,
+      "name": "France",
+      "visa_required": false
+    }
+  ],
+  "interests": [
+    {
+      "id": 3,
+      "placeId": 1,
+      "name": "car shop",
+      "description": "cool cars",
+      "cost": "$30",
+      "review": "Amazing Automobiles"
+    },
+    {
+      "name": "New Thing",
+      "cost": "$10",
+      "description": "Thing I wanna do",
+      "review": "",
+      "placeId": "3",
+      "id": 4
+    },
+    {
+      "name": "feoiaef",
+      "cost": "$40",
+      "description": "oaijag",
+      "review": "",
+      "placeId": "1",
+      "id": 5
+    },
+    {
+      "name": "new thing",
+      "cost": "$500",
+      "description": "ajeofijaeofija",
+      "review": "",
+      "placeId": 2,
+      "id": 6
+    },
+    {
+      "name": "pizza",
+      "cost": "$20",
+      "description": "awesome pizza and beer",
+      "review": "",
+      "placeId": 1,
+      "id": 7
+    },
+    {
+      "name": "Cheese",
+      "cost": "$100",
+      "description": "Amazing cheese and baguettes ",
+      "review": "",
+      "placeId": 3,
+      "id": 8
+    }
+  ]
 }

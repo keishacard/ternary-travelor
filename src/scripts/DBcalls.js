@@ -1,15 +1,21 @@
-const src = "http://localhost:8080/"
+// const src = "http://localhost:8080/"
 const API = {
-    getPointsOfInterest: function () {
-        return fetch(`http://localhost:8080/pointsOfInterest`)
+    getPointsOfInterest: () => {
+        return fetch("http://localhost:8088/places?_embed=interests")
             .then(response => response.json())
     },
-    getOnePointOfInterest: function (pointId) {
-        return fetch(`http://localhost:8080/events/${pointId}`)
+
+    getPlaces: () => {
+        return fetch("http://localhost:8088/places")
+            .then(resp => resp.json())
+    },
+
+    getOnePointOfInterest: (pointId) => {
+        return fetch(`http://localhost:8088/events/${pointId}`)
             .then(response => response.json())
     },
-    addPointofInterest: function (obj) {
-        return fetch("http://localhost:8080/events", {
+    addPointofInterest: (obj) => {
+        return fetch("http://localhost:8088/interests", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -18,8 +24,8 @@ const API = {
         })
             .then(response => response.json())
     },
-    editPointsOfInterest: function (pointsId, obj) {
-        return fetch(`http://localhost:8080/events/${pointsId}`, {
+    editPointsOfInterest: (obj) => {
+        return fetch(`http://localhost:8088/interests/${obj.id}`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json"
@@ -28,8 +34,8 @@ const API = {
         })
             .then(response => response.json())
     },
-    deletePointOfInterest: function (pointsId) {
-        return fetch(`http://localhost:8080/events/${pointsId}`, {
+    deletePointOfInterest: (pointsId) => {
+        return fetch(`http://localhost:8088/interests/${pointsId}`, {
             method: "DELETE",
             headers: {
                 "Content-Type": "application/json"
