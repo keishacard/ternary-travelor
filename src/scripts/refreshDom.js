@@ -44,6 +44,12 @@ export default function clearDom() {
                 delBtn.innerHTML = "Delete"
                 delBtn.addEventListener("click", (evt) => deleteInterest(evt.target.parentNode.id))
 
+                intDiv.appendChild(intName)
+                intDiv.appendChild(intDesc)
+                intDiv.appendChild(intCost)
+                intDiv.appendChild(intReview)
+                intDiv.appendChild(editBtn)
+                intDiv.appendChild(delBtn)
 
                 placeDiv.appendChild(intDiv)
             })
