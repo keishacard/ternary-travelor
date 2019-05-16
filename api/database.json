@@ -42,14 +42,6 @@
       "id": 5
     },
     {
-      "name": "new thing",
-      "cost": "$500",
-      "description": "ajeofijaeofija",
-      "review": "",
-      "placeId": 2,
-      "id": 6
-    },
-    {
       "name": "pizza",
       "cost": "$20",
       "description": "awesome pizza and beer",
@@ -64,6 +56,14 @@
       "review": "",
       "placeId": 3,
       "id": 8
+    },
+    {
+      "name": "Ski",
+      "cost": "$50",
+      "description": "Ski your heart out in the Alps",
+      "review": "",
+      "placeId": 2,
+      "id": 9
     }
   ]
 }
